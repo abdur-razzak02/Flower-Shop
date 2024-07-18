@@ -11,8 +11,8 @@ body {
 }
 
 /* shared style */
+
 section {
-  max-width: 1440px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -40,6 +40,9 @@ section {
   width: fit-content;
   color: rgb(255, 255, 255);
   background: rgb(229, 84, 115);
+}
+span{
+    color: rgb(229, 84, 115);
 }
 
 /* header banner section */
@@ -80,6 +83,10 @@ section {
 
 /* Our Featured Flowers */
 
+.fratured-flower-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .featured-title {
   width: 600px;
   text-align: center;
@@ -125,16 +132,42 @@ section {
   height: 320px;
   border-radius: 8px;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   background: rgba(39, 39, 39, 0.05);
 }
-.service-card{
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 33.33%;
+}
+
+#hot-deal {
+  background: rgba(229, 84, 115, 0.05);
+}
+.sale-container{
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 100px;
+    gap: 50px;
     align-items: center;
+    justify-content: center;
+}
+.sale-text{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 50px;
     text-align: center;
-    gap: 20px;
-    width: 33.33%;
+}
+.sale-subtitle{
+    margin-bottom: 20px;
+}
+.sale-image{
+    width: 30%;
 }
